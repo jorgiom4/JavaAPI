@@ -1,33 +1,89 @@
 package com.instancia2;
 
+import java.util.Arrays;
+
 /**
  * Tema 3 Java SDK API
+ * Métodos de la clase String
  *
  */
 public class Main {
 
     public static void main(String[] args) {
 
+        //getCadenaMayor();
+        //getVocales();
+
+        //splitCadena();
+
+        insertaStringBiulder();
+    }
+
+
+    /**
+     * Ejercicio para obtener la cadena de mayor tamaño, usamos el metodo length
+     */
+    public static void getCadenaMayor(){
+
+        int mayor = 0;
+        int leng = 0;
+
+        String cadenaMayor = "";
+
         /*
+
         String s1 = "Ejemplo de cadena";
         String s2 = "Ejemplo de cadena mas larga";
-        String s3 = "Ejemplo de cadena mas larga todavia mas";
+        String s3 = "Ejemplo de cadena mas larga todavia mas asalsk alsakas laksl";
         String s4 = "Ejemplo de cadena mas larga todavia mas y mas";
+
+        if(s1.length() > mayor){
+            mayor = s1.length();
+            cadenaMayor = "s1";
+        }
+
+        if(s2.length() > mayor){
+            mayor = s2.length();
+            cadenaMayor = "s2";
+        }
+
+        if(s3.length() > mayor){
+            mayor = s3.length();
+            cadenaMayor = "s3";
+        }
+
+        if(s4.length() > mayor){
+            mayor = s4.length();
+            cadenaMayor = "s4";
+        }
+
+        System.out.println("La cadena mayor es: " + mayor + " -> " + cadenaMayor);
+
         */
+
+
 
         String cadenas[] =  new String[4];
 
         cadenas[0] = "Ejemplo de cadena";
-        cadenas[1] = "Ejemplo de cadena mas largaererererer er er re er ere r er";
+        cadenas[1] = "Ejemplo de cadena mas aal alslaskla salksla slaskl lakslak s";
         cadenas[2] = "Ejemplo de cadena mas larga todavia mas";
-        cadenas[3] = "Ejemplo de cadena mas larga todavia mas y mas";
+        cadenas[3] = "Ejemplo de cadena mas larga todavia mas y mas larga";
 
-        int mayor=0;
-        int leng=0;
+        int i = 0;
+        for (String cadena:cadenas) {
+            leng = cadena.length();
+            if(leng > mayor){
+                mayor = leng;
+                cadenaMayor = "cadena[" + (i) + "]";
+            }
+            i++;
+        }
 
-        String cadenaMayor = "";
 
-        for(int i=0;i<3;i++){
+
+        /*
+        for(int i=0;i<=3;i++){
             leng = cadenas[i].length();
             if(leng > mayor){
                 mayor = leng;
@@ -35,8 +91,10 @@ public class Main {
             }
 
         }
+        */
 
         System.out.println("mayor: " + mayor + " " + cadenaMayor);
+
 
     }
 
@@ -72,7 +130,46 @@ public class Main {
 
         System.out.println("El numero de vocales es:" + numeroValores);
 
+    }
 
+    public static void splitCadena(){
+
+        String texto = "esto.es.una.cadena";
+        String cadena[] = texto.split("\\."); // --> el punto es considerado como caracter reservado y hay que escaparlo
+
+        System.out.println(cadena);
+
+        for (String parte:cadena) {
+            System.out.println(parte);
+        }
+
+        //Arrays.stream(cadena).forEach((p-> System.out.println(p))); // --> Programacion funcional
+
+
+
+    }
+
+    /**
+     * Ejercicio 3
+     * Vamos a realizar un ejercicio en el que, dada una determinada cadena de caracteres, se
+     inserte una barra / adicional entre palabras.
+     Mediante el método indexOf() se irán buscando las posiciones donde se encuentran los espacios
+     para insertar el espacio adicional, operación esta que será́realizada a través del método insert().
+     */
+
+    public static void insertaStringBiulder(){
+
+        //Con string
+        String texto = "Texto donde se insertaran espacio";
+
+        texto = texto.replace(" ", "/ ");
+
+        System.out.println("Nueva cadena: " + texto);
+
+        //Con StringBuilder
+
+        StringBuilder st = new StringBuilder("Texto donde se insertaran espacios");
+        int inx = 0;
 
 
 
