@@ -1,5 +1,6 @@
 package com.instancia2;
 
+import com.instancia2.colecciones.ColeccionArrayList;
 import com.instancia2.ejercicio_4.Ejerccio4;
 import com.instancia2.parseo.Parseo;
 
@@ -26,9 +27,14 @@ public class Main {
         System.out.println("Resultado: " + ejer4.sumaRandom());
         */
 
-
+        /*
         Parseo parse = new Parseo();
         parse.sumaParseo();
+        */
+
+        ColeccionArrayList myCollectionArrayList = new ColeccionArrayList();
+        //myCollectionArrayList.MyarrayList();
+        System.out.println(myCollectionArrayList.dameNotas());
 
     }
 
