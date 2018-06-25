@@ -1,5 +1,8 @@
 package com.instancia2;
 
+import com.instancia2.ejercicio_4.Ejerccio4;
+import com.instancia2.parseo.Parseo;
+
 import java.util.Arrays;
 
 /**
@@ -17,6 +20,16 @@ public class Main {
         //splitCadena();
 
         insertaStringBiulder();
+
+        /*
+        Ejerccio4 ejer4 = new Ejerccio4();
+        System.out.println("Resultado: " + ejer4.sumaRandom());
+        */
+
+
+        Parseo parse = new Parseo();
+        parse.sumaParseo();
+
     }
 
 
