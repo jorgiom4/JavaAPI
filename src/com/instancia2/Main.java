@@ -1,6 +1,9 @@
 package com.instancia2;
 
+import com.instancia2.colecciones.Colas;
 import com.instancia2.colecciones.ColeccionArrayList;
+import com.instancia2.colecciones.ColeccionHasTable;
+import com.instancia2.colecciones.Conjuntos;
 import com.instancia2.ejercicio_4.Ejerccio4;
 import com.instancia2.parseo.Parseo;
 
@@ -20,7 +23,7 @@ public class Main {
 
         //splitCadena();
 
-        insertaStringBiulder();
+        //insertaStringBiulder();
 
         /*
         Ejerccio4 ejer4 = new Ejerccio4();
@@ -32,9 +35,23 @@ public class Main {
         parse.sumaParseo();
         */
 
+        /*
         ColeccionArrayList myCollectionArrayList = new ColeccionArrayList();
         //myCollectionArrayList.MyarrayList();
         System.out.println(myCollectionArrayList.dameNotas());
+        */
+
+        //ColeccionHasTable miColeccionHasTable = new ColeccionHasTable();
+        //miColeccionHasTable.ejemploHasTable();
+        //miColeccionHasTable.ejemploHashMap();
+
+        /*
+        Conjuntos miConjunto = new Conjuntos();
+        miConjunto.ejemploHashSet();
+        */
+
+        Colas miCola = new Colas();
+        miCola.ejemploColas();
 
     }
 
