@@ -5,6 +5,8 @@ import com.instancia2.colecciones.ColeccionArrayList;
 import com.instancia2.colecciones.ColeccionHasTable;
 import com.instancia2.colecciones.Conjuntos;
 import com.instancia2.ejercicio_4.Ejerccio4;
+import com.instancia2.ejercicio_8.AgendaContactos;
+import com.instancia2.entradasalida.EjemploPrintStream;
 import com.instancia2.parseo.Parseo;
 
 import java.util.Arrays;
@@ -50,8 +52,19 @@ public class Main {
         miConjunto.ejemploHashSet();
         */
 
+        /*
         Colas miCola = new Colas();
         miCola.ejemploColas();
+        */
+
+        /*
+        EjemploPrintStream ejemploStream = new EjemploPrintStream();
+        //ejemploStream.salidaPrintStream();
+        ejemploStream.ejemploBufferedReader();
+        */
+
+        AgendaContactos miAgenda = new AgendaContactos();
+
 
     }
 
